@@ -81,7 +81,7 @@ function heapSort(mainArray, n, animations) {
         max_heapify(mainArray, n, i, animations);
     }
     // send the max element to the last position and apply heapify on size - 1 array
-    for(var i = n - 1; i > 0; i--){
+    for(i = n - 1; i > 0; i--){
         swap(mainArray, 0, i, animations);
         animationStep = [i, i, 3];
         animations.push(animationStep);
@@ -95,7 +95,7 @@ function heapSort(mainArray, n, animations) {
         animationStep = [i, i, 3];
         animations.push(animationStep);
     }
-    animationStep = [0, 0, 3];
+    animationStep = [i, i, 3];
     animations.push(animationStep);
 }
 
