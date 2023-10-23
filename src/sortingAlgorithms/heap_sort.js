@@ -49,7 +49,7 @@ function max_heapify(mainArray, size, i, animations){
     var r = (2 * i) + 2;
 
     if(l < size && mainArray[l] > mainArray[largest]){
-        if(largest != i){
+        if(largest !== i){
             animationStep = [largest, largest, 5];
             animations.push(animationStep);
         }
@@ -59,7 +59,7 @@ function max_heapify(mainArray, size, i, animations){
     }
 
     if(r < size && mainArray[r] > mainArray[largest]){
-        if(largest != i){
+        if(largest !== i){
             animationStep = [largest, largest, 5];
             animations.push(animationStep);
         }
@@ -68,7 +68,7 @@ function max_heapify(mainArray, size, i, animations){
         animations.push(animationStep);
     }
 
-    if(largest != i){
+    if(largest !== i){
         swap(mainArray, i, largest, animations);
         max_heapify(mainArray, size, largest, animations);
     }
