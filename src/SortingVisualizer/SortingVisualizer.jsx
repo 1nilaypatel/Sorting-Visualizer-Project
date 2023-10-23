@@ -541,9 +541,6 @@ export default class SortingVisualizer extends React.Component {
 
 
 
-{/* <button onClick={() => this.testSortingAlgorithms()}>
-  Test Sorting Algorithms (BROKEN)
-</button> */}
 
 //   // NOTE: This method will only work if your sorting algorithms actually return
 //   // the sorted arrays; if they return the animations (as they currently do), then

@@ -95,7 +95,7 @@ function heapSort(mainArray, n, animations) {
         animationStep = [i, i, 3];
         animations.push(animationStep);
     }
-    animationStep = [i, i, 3];
+    animationStep = [0, 0, 3];
     animations.push(animationStep);
 }
 
